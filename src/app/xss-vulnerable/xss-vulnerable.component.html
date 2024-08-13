@@ -1,0 +1,5 @@
+<p>xss-vulnerable works!</p>
+<h2>Vulnerable XSS Example</h2>
+<input [(ngModel)]="userInput" placeholder="Enter content here">
+<button (click)="updateContent()">Update Content</button>
+<div [innerHTML]="userInput"></div>
